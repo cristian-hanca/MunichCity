@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_ec70a90043b080e0cb3af1c6ca6bd44c64550fa2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_4c5865f0b22fa0396c884598271fe8c933acc318\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_2e283221bb6c9b7eb0925173045abfe4c657d3cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_76a70d2465c9d9d88c41fc720898a6cdd68b10ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_983e6db0bfd26b9d9a919abf0053d4fb70333e2e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_a7d26218ae06d41034842614bee159f951bb62e5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_afdfa9f98b078ec6abc75469602c75c904887e7a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ff78c64d997e2fa1bae641d97f7772ef6d644557">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_636d7c3139fa7d283564cac89048013bde454128\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_a8b60fe1ace1ecda6f1aa82089d7d7bb1a8cf581\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_5a56515eb2aa71e44d3deede07f98d2a4149d97c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_848e6178e18e8a4a2e332e17db644bee427cab29\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_96570fb596908080011cc311f5c4780091067662\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_e097cb3b42fa33058477aa1f1a52b63956cc9204\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_30da646f81449717f14684a2de328132efd8363e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_a2abd2238ecc9723ac671d5fc12d15ea327abecb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_2dee820ca660f958fc8ae1572b172c4be08201b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_6a0d291cebb9764ff503ef6bedeabb6a48527c8a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="30424f8a5437a2a621c8dc1d252fbddce90df758">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_fb5e1abf475c03739c8105519ae4b1ee70810b96\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_10cd953c940accdea77ebb67004f63b8f836c70e\classes.dex" />
+    </item>
+
+</items>
