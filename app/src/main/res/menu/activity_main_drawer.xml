@@ -3,7 +3,7 @@
 
     <item android:title="@string/menu_title">
         <menu>
-            <group android:checkableBehavior="single">
+            <group android:checkableBehavior="none">
                 <item
                     android:id="@+id/menu_near"
                     android:icon="@drawable/menu_near"

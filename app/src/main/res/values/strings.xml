@@ -6,6 +6,12 @@
 
     <string name="action_settings">Settings</string>
 
+    <string name="title_near">Near me</string>
+    <string name="title_search">Search</string>
+    <string name="title_trip">Trip</string>
+    <string name="title_weather">Weather</string>
+    <string name="title_info">Other Information</string>
+
     <string name="menu_title">I want to…</string>
     <string name="menu_near">Find something near me</string>
     <string name="menu_search">Search for something</string>

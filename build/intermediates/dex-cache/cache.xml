@@ -196,7 +196,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="395435f4ebe6ec7895016c8cb8ddd5c4cb199095">
+        sha1="f9dff82ffe0abed94b40076d52ea85c9737b3734">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_636d7c3139fa7d283564cac89048013bde454128\classes.dex" />
     </item>
     <item
@@ -250,7 +250,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="a0b0bc1c01c9a6a5cd4d5e064c5cc5ecae585410">
+        sha1="6114ec188f59155259aa05c6dd3a1f196a58c841">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_fb5e1abf475c03739c8105519ae4b1ee70810b96\classes.dex" />
     </item>
     <item
