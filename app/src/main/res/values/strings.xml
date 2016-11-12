@@ -5,4 +5,11 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="menu_title">I want to…</string>
+    <string name="menu_near">Find something near me</string>
+    <string name="menu_search">Search for something</string>
+    <string name="menu_trip">Go on a trip</string>
+    <string name="menu_weather">Find out the Weather</string>
+    <string name="menu_info">Some more Info</string>
 </resources>
