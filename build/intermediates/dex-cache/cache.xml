@@ -3,12 +3,57 @@
 
     <item
         is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_2f7efda5505cf26ef4521d3fbf7d160b1b6b6a7c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a2537b11ae24b42172d34e2a613fc0b903c56158">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-awareness-9.8.0_63d265a029fd3c439c1d4a12392808ec65743674\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_0cdd399fdc48bb4b43b217e6600a9ddccba626c3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="7e92aadd0697922316d1395c1887a23aebec640a">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.8.0_7fcb9e7003307e059c939698d5baf99ab4cafa52\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="50e35ae101a679c4c8ef3dda075b1df9d5d947d9">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-9.8.0_bb04a43573892e359c5f97eea70f549ef1daae12\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_ce9137bb473992a475b4fd39ad690006187b899f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -30,6 +75,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbb3885c40e431cd2b0dc69c0cab2bf6d5da7b43">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-9.8.0_2926a2d21b6c150ab69f9c14be8df78d82960b02\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_c92902c533ba000aa499cbab9e13956378cc15ab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.8.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -48,12 +111,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e9b2cfdfd59b03643f1e240668275378b96615a8">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-9.8.0_2c239ce6f7ed2d13c689dd8e252b792e97a2a2ad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\9.8.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="679251204de40ace98776a6f4e3a649c27e3d89f">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-9.8.0_4d487ec637987b3fe5598b6889ddacbf524311ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_70c442b2821f88564ffb95cf199558266ba14614\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Cris Surface\.gradle\caches\modules-2\files-2.1\com.annimon\stream\1.0.9\46495fc7ff6b9bad0890aaafc0603003d47a0bfd\stream-1.0.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="46495fc7ff6b9bad0890aaafc0603003d47a0bfd">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\stream-1.0.9_f15b8cbb7c88f649a7147af4790e503ec49c0a6f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,12 +165,66 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="055eed08c9cff50cac0db69c74c4d9ff7aef3d84">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-9.8.0_5a50014a7cdee5a7ca57c766bdfb5553f2aa48b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.0_23a253121a1f76e9e9917901c23d6c419a7bbf0b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.0_f21745b599fd16dbe9dca596284261bc52b63829\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3f8f779a22cbb4c4d0759467a4f1011bb5252970">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.8.0_71b2c9fb4f2e678f816d2d1622532eaa322dc62b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c81df6bd515398ebe45089b0b16c55752a131f6a">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-9.8.0_46a670c6ad03927da658cdf4e201c62a56921021\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\9.8.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="910c013c511f752c4bbe24c5f492f669f4a3ccc0">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-9.8.0_214bc53bd0195dd38e1e0b894787d2e96a54e7f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="74ac7cbcf0de4a88e59612dc3a9e3f9e71acb4ca">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-9.8.0_0b12d9288932a171d4cd956de375fd590b0777c3\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -102,6 +246,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3daa7a9c9009fd386872a84c177a76979bdcafd6">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-9.8.0_418d8de2196d285f47ee810fad51e505f5a1c595\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.8.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -111,12 +264,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.0_9cccc365fdb6e051b695f605e73f318a60780690\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_c53f3257a599fc3ffac0eec37338900e0a08f760\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.8.0_d7b076acbd6c9d71e161253976ee7ad65ba10aaf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_5831169445e2d542e990965f58a6d46ce4fca708\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -183,6 +363,33 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-instantapps\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d358528c5a8731a6e19bca910cbb3fd755ee31">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-instantapps-9.8.0_7f6d2ebf95ad6afa53e3a691b4f843f45ded8752\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.8.0_8ee005ac100b27f1ff7cd9b8518c7a5712e34a45\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fac180f0d7f2bfaed2e506374f9408a100e08e68">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_636d7c3139fa7d283564cac89048013bde454128\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -192,12 +399,39 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f9dff82ffe0abed94b40076d52ea85c9737b3734">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_636d7c3139fa7d283564cac89048013bde454128\classes.dex" />
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.0.0_f4cc64c099953384b5cb9572a453cf8196c3906b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.0_ca14d2dd18c3e44468d78eea0bd1fe0b9125baba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-24.0.0_0346acea307fe1ce9f0e8e0c02b341549215622d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.0_4fc681b1dc27d08e5ca918061fae25730bfd7bdc\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -255,12 +489,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4438b1a7848a7c571122ba618aa1304514aabee6">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.8.0_0ed48593349e3f7c81bff68fe723f15c92241020\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_7617418037c7ef156eeb65244202ba990d81fbd7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_9ec17c127b37d84aba34a153decda6bffc3db875\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -291,12 +543,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="85299bf1924dde0200109a58033c5ef84ecb6991">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-9.8.0_2ad9d9b91b78712e84b8d5b7c56dba60b7e323d1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.0_2897d32449cf40c139e71ad143e7884397d8d758\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.8.0_57d551b2604ed9afe6c57a2a9c84c15645199086\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -327,12 +597,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Cris Surface\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.9.5\5f01da7306363fad2028b916f3eab926262de928\joda-time-2.9.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f01da7306363fad2028b916f3eab926262de928">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\joda-time-2.9.5_c3fc6c8423218c430218da05444b8944e9db5082\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.8.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="a1ed98e01bd58976d80c062fd0ea2968a1ff68a1">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.8.0_c1ba1ec9453fce6c1f886bb3f149a66a795b070f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.8.0_914837a1f3dea96a54df151e83154aabfde76f71\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.8.0_f624f71bce028d5c59bb42304c3cf189bb867038\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -387,294 +684,6 @@
         revision="25.0.0"
         sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.0_093f5eb4ba3d0ddcd00b5d36dcb7a0fdfb4c8188\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_2f7efda5505cf26ef4521d3fbf7d160b1b6b6a7c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a2537b11ae24b42172d34e2a613fc0b903c56158">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-awareness-9.8.0_63d265a029fd3c439c1d4a12392808ec65743674\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_0cdd399fdc48bb4b43b217e6600a9ddccba626c3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="50e35ae101a679c4c8ef3dda075b1df9d5d947d9">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-9.8.0_bb04a43573892e359c5f97eea70f549ef1daae12\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_ce9137bb473992a475b4fd39ad690006187b899f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fbb3885c40e431cd2b0dc69c0cab2bf6d5da7b43">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-9.8.0_2926a2d21b6c150ab69f9c14be8df78d82960b02\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_c92902c533ba000aa499cbab9e13956378cc15ab\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e9b2cfdfd59b03643f1e240668275378b96615a8">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-9.8.0_2c239ce6f7ed2d13c689dd8e252b792e97a2a2ad\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_70c442b2821f88564ffb95cf199558266ba14614\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Cris Surface\.gradle\caches\modules-2\files-2.1\com.annimon\stream\1.0.9\46495fc7ff6b9bad0890aaafc0603003d47a0bfd\stream-1.0.9.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="46495fc7ff6b9bad0890aaafc0603003d47a0bfd">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\stream-1.0.9_f15b8cbb7c88f649a7147af4790e503ec49c0a6f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="055eed08c9cff50cac0db69c74c4d9ff7aef3d84">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-9.8.0_5a50014a7cdee5a7ca57c766bdfb5553f2aa48b6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.0_23a253121a1f76e9e9917901c23d6c419a7bbf0b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.0_f21745b599fd16dbe9dca596284261bc52b63829\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3f8f779a22cbb4c4d0759467a4f1011bb5252970">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.8.0_71b2c9fb4f2e678f816d2d1622532eaa322dc62b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c81df6bd515398ebe45089b0b16c55752a131f6a">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-9.8.0_46a670c6ad03927da658cdf4e201c62a56921021\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="74ac7cbcf0de4a88e59612dc3a9e3f9e71acb4ca">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-9.8.0_0b12d9288932a171d4cd956de375fd590b0777c3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3daa7a9c9009fd386872a84c177a76979bdcafd6">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-9.8.0_418d8de2196d285f47ee810fad51e505f5a1c595\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26674000177e45447a0326a6ad84612761199a13">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.0_9cccc365fdb6e051b695f605e73f318a60780690\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.8.0_d7b076acbd6c9d71e161253976ee7ad65ba10aaf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_5831169445e2d542e990965f58a6d46ce4fca708\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-instantapps\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="00d358528c5a8731a6e19bca910cbb3fd755ee31">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-instantapps-9.8.0_7f6d2ebf95ad6afa53e3a691b4f843f45ded8752\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.8.0_8ee005ac100b27f1ff7cd9b8518c7a5712e34a45\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.0.0_f4cc64c099953384b5cb9572a453cf8196c3906b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.0_ca14d2dd18c3e44468d78eea0bd1fe0b9125baba\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-24.0.0_0346acea307fe1ce9f0e8e0c02b341549215622d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.0_4fc681b1dc27d08e5ca918061fae25730bfd7bdc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4438b1a7848a7c571122ba618aa1304514aabee6">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.8.0_0ed48593349e3f7c81bff68fe723f15c92241020\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_9ec17c127b37d84aba34a153decda6bffc3db875\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="85299bf1924dde0200109a58033c5ef84ecb6991">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-9.8.0_2ad9d9b91b78712e84b8d5b7c56dba60b7e323d1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.8.0_57d551b2604ed9afe6c57a2a9c84c15645199086\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.8.0_914837a1f3dea96a54df151e83154aabfde76f71\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.8.0_f624f71bce028d5c59bb42304c3cf189bb867038\classes.dex" />
     </item>
 
 </items>
