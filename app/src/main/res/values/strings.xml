@@ -25,4 +25,5 @@
     <string name="header_search_poi">Which one?</string>
     <string name="number">9999</string>
     <string name="kilometers">Kilometers</string>
+    <string name="hint_poi">Type Name of Place</string>
 </resources>

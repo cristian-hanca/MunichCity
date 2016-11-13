@@ -9,7 +9,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
+import android.support.v7.widget.SearchView;
 import ro.hanca.cristian.managedrecyclerview.ManagedRecyclerView;
 import ro.hanca.cristian.managedrecyclerview.adapter.RecyclerViewClickListener;
 import ro.hanca.cristian.munichcity.AppContext;
@@ -17,6 +20,8 @@ import ro.hanca.cristian.munichcity.R;
 import ro.hanca.cristian.munichcity.adapters.POIAdapter;
 import ro.hanca.cristian.munichcity.adapters.SubTypeAdapter;
 import ro.hanca.cristian.munichcity.adapters.TypeAdapter;
+import ro.hanca.cristian.munichcity.filters.POIFilters;
+import ro.hanca.cristian.munichcity.models.POI;
 import ro.hanca.cristian.munichcity.models.SubType;
 import ro.hanca.cristian.munichcity.models.SubTypeDao;
 import ro.hanca.cristian.munichcity.models.Type;
@@ -32,9 +37,12 @@ public class SearchFragment extends Fragment {
     private TextView head;
     private View back;
     private ManagedRecyclerView list;
+    private SearchView search;
 
     private Type selectedType;
     private SubType selectedSubType;
+    private POIFilters filter;
+    private POIAdapter poiAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
@@ -48,12 +56,31 @@ public class SearchFragment extends Fragment {
         typeText = (TextView) view.findViewById(R.id.selected_type);
         caret = view.findViewById(R.id.caret);
         subTypeText = (TextView) view.findViewById(R.id.selected_subtype);
+        search = (SearchView) view.findViewById(R.id.search);
 
-        if (selectedType == null) {
-            setupTypes();
+        if (selectedSubType == null) {
+            if (selectedType == null) {
+                setupTypes();
+            } else {
+                setupSubTypes();
+            }
         } else {
-            setupSubTypes();
+            setupPOI();
         }
+
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(final String newText) {
+                filter.setSearch(newText);
+                updatePOI();
+                return true;
+            }
+        });
 
         updateUi();
         return view;
@@ -66,6 +93,7 @@ public class SearchFragment extends Fragment {
                 typeText.setVisibility(View.INVISIBLE);
                 caret.setVisibility(View.INVISIBLE);
                 subTypeText.setVisibility(View.INVISIBLE);
+                search.setVisibility(View.GONE);
             } else {
                 back.setVisibility(View.VISIBLE);
                 back.setOnClickListener(new View.OnClickListener() {
@@ -79,6 +107,7 @@ public class SearchFragment extends Fragment {
                 caret.setVisibility(View.VISIBLE);
                 subTypeText.setVisibility(View.INVISIBLE);
                 typeText.setText(selectedType.getName());
+                search.setVisibility(View.GONE);
             }
         } else {
             back.setVisibility(View.VISIBLE);
@@ -94,7 +123,15 @@ public class SearchFragment extends Fragment {
             subTypeText.setVisibility(View.VISIBLE);
             typeText.setText(selectedType.getName());
             subTypeText.setText(selectedSubType.getName());
+            search.setVisibility(View.VISIBLE);
+            search.setQuery(filter.getSearch(), false);
         }
+    }
+
+    private void updatePOI() {
+        List<Map.Entry<Float, POI>> filteredModelList = filter.getFiltered();
+        poiAdapter.animateTo(filteredModelList);
+        list.getListView().scrollToPosition(0);
     }
 
     private void setupTypes() {
@@ -149,11 +186,13 @@ public class SearchFragment extends Fragment {
             return;
         }
 
-        head.setText(R.string.header_search_poi);
-        final POIAdapter adapter = new POIAdapter(new ArrayList<>(AppContext.location
+        filter = new POIFilters(new ArrayList<>(AppContext.location
                 .computeDistances(selectedSubType.getEntries(),
                         AppContext.location.getLocation()).entrySet()));
-        adapter.setItemClickListener(new RecyclerViewClickListener() {
+
+        head.setText(R.string.header_search_poi);
+        poiAdapter = new POIAdapter(filter.getFiltered());
+        poiAdapter.setItemClickListener(new RecyclerViewClickListener() {
             @Override
             public void itemClicked(View v, int position) {
                 //adapter.getItem(position);
@@ -165,7 +204,9 @@ public class SearchFragment extends Fragment {
                 });
             }
         });
-        list.setAdapter(adapter);
+        list.setAdapter(poiAdapter);
+        //search.setQuery("", false);
+
         updateUi();
     }
 }
