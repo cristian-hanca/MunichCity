@@ -19,6 +19,10 @@
     <string name="menu_weather">Find out the Weather</string>
     <string name="menu_info">Some more Info</string>
     <string name="name">Name</string>
+
     <string name="header_search_types">What are you searching for?</string>
     <string name="header_search_subtypes">What more exactly?</string>
+    <string name="header_search_poi">Which one?</string>
+    <string name="number">9999</string>
+    <string name="kilometers">Kilometers</string>
 </resources>

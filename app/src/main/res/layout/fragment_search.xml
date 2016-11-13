@@ -6,19 +6,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:text="@string/header_search_types"
-        android:layout_width="match_parent"
+    <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold|italic"
-        android:textSize="@dimen/text_large"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:id="@+id/selected_type"
+            android:text="@string/name"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_small"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"/>
+
+        <ImageView
+            android:id="@+id/caret"
+            android:src="@drawable/caret"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:id="@+id/selected_subtype"
+            android:text="@string/name"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_small"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/colorPrimary" />
+        android:layout_marginBottom="3dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back_big"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/head"
+            android:text="@string/header_search_types"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/text_large"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
@@ -35,9 +92,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingLeft="10dp"
-            android:paddingTop="5dp"
+            android:paddingTop="7dp"
             android:paddingRight="10dp"
-            android:paddingBottom="5dp"/>
+            android:paddingBottom="7dp"/>
 
     </android.support.v7.widget.CardView>
 

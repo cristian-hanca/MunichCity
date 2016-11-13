@@ -61,7 +61,7 @@ public class LocationProvider implements LocationListener {
             Location poiloc = new Location("");
             poiloc.setLatitude(poi.getLat());
             poiloc.setLongitude(poi.getLon());
-            res.put(location.distanceTo(poiloc), poi);
+            res.put(location.distanceTo(poiloc) / 1000, poi);
         }
         return res;
     }
