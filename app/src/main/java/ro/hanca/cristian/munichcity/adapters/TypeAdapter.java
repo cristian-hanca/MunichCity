@@ -37,21 +37,27 @@ public class TypeAdapter extends FilterableRecyclerViewAdapter<Type, TypeAdapter
         holder.icon.setImageResource(AppContext.activity.getResources().getIdentifier(
                 "t" + item.getId(), "drawable", AppContext.activity.getPackageName()));
         holder.name.setText(item.getName());
+        holder.count.setText("(" + item.getEntries().size() + ")");
+        holder.separator.setVisibility(position == dataSet.size()
+                ? View.INVISIBLE : View.VISIBLE);
     }
 
     class ViewHolder extends FilterableRecyclerViewAdapter.ClickableViewHolder {
 
         ImageView icon;
         TextView name;
+        TextView count;
         ImageView next;
+        View separator;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
             icon = (ImageView) itemView.findViewById(R.id.icon);
             name = (TextView) itemView.findViewById(R.id.name);
+            count = (TextView) itemView.findViewById(R.id.count);
             next = (ImageView) itemView.findViewById(R.id.next);
-
+            separator = itemView.findViewById(R.id.separator);
         }
     }
 }

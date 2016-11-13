@@ -33,18 +33,25 @@ public class SubTypeAdapter extends FilterableRecyclerViewAdapter<SubType, SubTy
         SubType item = dataSet.get(position);
 
         holder.name.setText(item.getName());
+        holder.count.setText("(" + item.getEntries().size() + ")");
+        holder.separator.setVisibility(position == dataSet.size()
+                ? View.INVISIBLE : View.VISIBLE);
     }
 
     class ViewHolder extends  FilterableRecyclerViewAdapter.ClickableViewHolder {
 
         TextView name;
+        TextView count;
         ImageView next;
+        View separator;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
             name = (TextView) itemView.findViewById(R.id.name);
+            count = (TextView) itemView.findViewById(R.id.count);
             next = (ImageView) itemView.findViewById(R.id.next);
+            separator = itemView.findViewById(R.id.separator);
         }
     }
 }

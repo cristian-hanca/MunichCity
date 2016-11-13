@@ -26,4 +26,5 @@
     <string name="number">9999</string>
     <string name="kilometers">Kilometers</string>
     <string name="hint_poi">Type Name of Place</string>
+    <string name="count">(999)</string>
 </resources>

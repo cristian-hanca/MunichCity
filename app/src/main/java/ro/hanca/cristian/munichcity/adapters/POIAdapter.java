@@ -44,18 +44,22 @@ public class POIAdapter extends FilterableRecyclerViewAdapter<Map.Entry<Float, P
 
         holder.name.setText(item.getValue().getName());
         holder.distance.setText(df.format(item.getKey()));
+        holder.separator.setVisibility(position == dataSet.size()
+                ? View.INVISIBLE : View.VISIBLE);
     }
 
     class ViewHolder extends FilterableRecyclerViewAdapter.ClickableViewHolder {
 
         TextView name;
         TextView distance;
+        View separator;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
             name = (TextView) itemView.findViewById(R.id.name);
             distance = (TextView) itemView.findViewById(R.id.distance);
+            separator = itemView.findViewById(R.id.separator);
         }
     }
 }

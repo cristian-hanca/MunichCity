@@ -1,5 +1,6 @@
 package ro.hanca.cristian.munichcity.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,6 +14,11 @@ import java.util.List;
 import java.util.Map;
 
 import android.support.v7.widget.SearchView;
+
+import com.annimon.stream.Collectors;
+import com.annimon.stream.Stream;
+import com.annimon.stream.function.Predicate;
+
 import ro.hanca.cristian.managedrecyclerview.ManagedRecyclerView;
 import ro.hanca.cristian.managedrecyclerview.adapter.RecyclerViewClickListener;
 import ro.hanca.cristian.munichcity.AppContext;
@@ -23,13 +29,14 @@ import ro.hanca.cristian.munichcity.adapters.TypeAdapter;
 import ro.hanca.cristian.munichcity.filters.POIFilters;
 import ro.hanca.cristian.munichcity.models.POI;
 import ro.hanca.cristian.munichcity.models.SubType;
-import ro.hanca.cristian.munichcity.models.SubTypeDao;
 import ro.hanca.cristian.munichcity.models.Type;
 
 /**
  * Nearby Fragment.
  */
 public class SearchFragment extends Fragment {
+
+    private static String searchFragment_key = "searchFragment_key";
 
     private TextView typeText;
     private TextView subTypeText;
@@ -39,10 +46,7 @@ public class SearchFragment extends Fragment {
     private ManagedRecyclerView list;
     private SearchView search;
 
-    private Type selectedType;
-    private SubType selectedSubType;
-    private POIFilters filter;
-    private POIAdapter poiAdapter;
+    private Content content;
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
@@ -58,8 +62,8 @@ public class SearchFragment extends Fragment {
         subTypeText = (TextView) view.findViewById(R.id.selected_subtype);
         search = (SearchView) view.findViewById(R.id.search);
 
-        if (selectedSubType == null) {
-            if (selectedType == null) {
+        if (content.selectedSubType == null) {
+            if (content.selectedType == null) {
                 setupTypes();
             } else {
                 setupSubTypes();
@@ -76,7 +80,7 @@ public class SearchFragment extends Fragment {
 
             @Override
             public boolean onQueryTextChange(final String newText) {
-                filter.setSearch(newText);
+                content.filter.setSearch(newText);
                 updatePOI();
                 return true;
             }
@@ -87,8 +91,8 @@ public class SearchFragment extends Fragment {
     }
 
     private void updateUi() {
-        if (selectedSubType == null) {
-            if (selectedType == null) {
+        if (content.selectedSubType == null) {
+            if (content.selectedType == null) {
                 back.setVisibility(View.INVISIBLE);
                 typeText.setVisibility(View.INVISIBLE);
                 caret.setVisibility(View.INVISIBLE);
@@ -106,7 +110,7 @@ public class SearchFragment extends Fragment {
                 typeText.setVisibility(View.VISIBLE);
                 caret.setVisibility(View.VISIBLE);
                 subTypeText.setVisibility(View.INVISIBLE);
-                typeText.setText(selectedType.getName());
+                typeText.setText(content.selectedType.getName());
                 search.setVisibility(View.GONE);
             }
         } else {
@@ -121,22 +125,22 @@ public class SearchFragment extends Fragment {
             typeText.setVisibility(View.VISIBLE);
             caret.setVisibility(View.VISIBLE);
             subTypeText.setVisibility(View.VISIBLE);
-            typeText.setText(selectedType.getName());
-            subTypeText.setText(selectedSubType.getName());
+            typeText.setText(content.selectedType.getName());
+            subTypeText.setText(content.selectedSubType.getName());
             search.setVisibility(View.VISIBLE);
-            search.setQuery(filter.getSearch(), false);
+            search.setQuery(content.filter.getSearch(), false);
         }
     }
 
     private void updatePOI() {
-        List<Map.Entry<Float, POI>> filteredModelList = filter.getFiltered();
-        poiAdapter.animateTo(filteredModelList);
+        List<Map.Entry<Float, POI>> filteredModelList = content.filter.getFiltered();
+        content.poiAdapter.animateTo(filteredModelList);
         list.getListView().scrollToPosition(0);
     }
 
     private void setupTypes() {
-        selectedType = null;
-        selectedSubType = null;
+        content.selectedType = null;
+        content.selectedSubType = null;
         back.setVisibility(View.GONE);
 
         head.setText(R.string.header_search_types);
@@ -144,7 +148,7 @@ public class SearchFragment extends Fragment {
         adapter.setItemClickListener(new RecyclerViewClickListener() {
             @Override
             public void itemClicked(View v, int position) {
-                selectedType = adapter.getItem(position);
+                content.selectedType = adapter.getItem(position);
                 AppContext.activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -158,17 +162,25 @@ public class SearchFragment extends Fragment {
     }
 
     private void setupSubTypes() {
-        if (selectedType == null) {
+        if (content.selectedType == null) {
             return;
         }
-        selectedSubType = null;
+        content.selectedSubType = null;
 
         head.setText(R.string.header_search_subtypes);
-        final SubTypeAdapter adapter = new SubTypeAdapter(selectedType.getEntries());
+        final SubTypeAdapter adapter = new SubTypeAdapter(Stream
+                .of(content.selectedType.getEntries())
+                .filter(new Predicate<SubType>() {
+                    @Override
+                    public boolean test(SubType value) {
+                        return value.getEntries().size() > 0;
+                    }
+                })
+                .collect(Collectors.<SubType>toList()));
         adapter.setItemClickListener(new RecyclerViewClickListener() {
             @Override
             public void itemClicked(View v, int position) {
-                selectedSubType = adapter.getItem(position);
+                content.selectedSubType = adapter.getItem(position);
                 AppContext.activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -182,17 +194,17 @@ public class SearchFragment extends Fragment {
     }
 
     private void setupPOI() {
-        if (selectedSubType == null) {
+        if (content.selectedSubType == null) {
             return;
         }
 
-        filter = new POIFilters(new ArrayList<>(AppContext.location
-                .computeDistances(selectedSubType.getEntries(),
+        content.filter = new POIFilters(new ArrayList<>(AppContext.location
+                .computeDistances(content.selectedSubType.getEntries(),
                         AppContext.location.getLocation()).entrySet()));
 
         head.setText(R.string.header_search_poi);
-        poiAdapter = new POIAdapter(filter.getFiltered());
-        poiAdapter.setItemClickListener(new RecyclerViewClickListener() {
+        content.poiAdapter = new POIAdapter(content.filter.getFiltered());
+        content.poiAdapter.setItemClickListener(new RecyclerViewClickListener() {
             @Override
             public void itemClicked(View v, int position) {
                 //adapter.getItem(position);
@@ -204,9 +216,39 @@ public class SearchFragment extends Fragment {
                 });
             }
         });
-        list.setAdapter(poiAdapter);
+        list.setAdapter(content.poiAdapter);
         //search.setQuery("", false);
 
         updateUi();
+    }
+
+    @SuppressWarnings("unchecked")
+    @Override
+    public void onAttach(Context context) {
+        content = AppContext.cache.getAndDelete(searchFragment_key, Content.class,
+                new Content());
+        super.onAttach(context);
+    }
+
+    @Override
+    public void onDetach() {
+        AppContext.cache.set(searchFragment_key, content);
+        super.onDetach();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        if (!AppContext.activity.isChangingConfigurations()) {
+            AppContext.cache.delete(searchFragment_key);
+        }
+    }
+
+    private class Content {
+        Type selectedType = null;
+        SubType selectedSubType = null;
+        POIFilters filter = null;
+        POIAdapter poiAdapter = null;
     }
 }
