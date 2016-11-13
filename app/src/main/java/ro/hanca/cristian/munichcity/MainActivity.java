@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.util.List;
 
 import ro.hanca.cristian.munichcity.fragments.NearFragment;
+import ro.hanca.cristian.munichcity.fragments.SearchFragment;
 import ro.hanca.cristian.munichcity.helpers.DataBaseHelpers;
 import ro.hanca.cristian.munichcity.helpers.FragmentHelpers;
 import ro.hanca.cristian.munichcity.helpers.MenuHandler;
@@ -63,27 +64,29 @@ public class MainActivity extends AppCompatActivity
         menuHandler = new MenuHandler(navigationView.getMenu(), new MenuHandler.Actions() {
             @Override
             public void onNear() {
-
+                FragmentHelpers.popAll();
+                FragmentHelpers.goToSingleton(new NearFragment(), Constants.gotoNear);
             }
 
             @Override
             public void onSearch() {
-
+                FragmentHelpers.popAll();
+                FragmentHelpers.goToSingleton(new SearchFragment(), Constants.gotoSearch);
             }
 
             @Override
             public void onTrip() {
-
+                FragmentHelpers.popAll();
             }
 
             @Override
             public void onWeather() {
-
+                FragmentHelpers.popAll();
             }
 
             @Override
             public void onInfo() {
-
+                FragmentHelpers.popAll();
             }
         });
 

@@ -34,4 +34,5 @@ dependencies {
     compile 'com.android.support:multidex:1.0.1'
     compile 'de.greenrobot:greendao:2.1.0'
     testCompile 'junit:junit:4.12'
+    compile project(path: ':managedrecyclerview')
 }

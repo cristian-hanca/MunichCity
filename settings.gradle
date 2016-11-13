@@ -1,1 +1,1 @@
-include ':app', ':databasemodule', ':daogenerator'
+include ':app', ':databasemodule', ':daogenerator', ':managedrecyclerview'

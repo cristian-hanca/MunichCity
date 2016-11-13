@@ -18,4 +18,6 @@
     <string name="menu_trip">Go on a trip</string>
     <string name="menu_weather">Find out the Weather</string>
     <string name="menu_info">Some more Info</string>
+    <string name="name">Name</string>
+    <string name="header_search_types">What are you searching for?</string>
 </resources>
