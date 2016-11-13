@@ -4,6 +4,7 @@ import android.*;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.database.sqlite.SQLiteDatabase;
+import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -20,12 +21,15 @@ import android.view.MenuItem;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.TreeMap;
 
 import ro.hanca.cristian.munichcity.fragments.NearFragment;
 import ro.hanca.cristian.munichcity.fragments.SearchFragment;
 import ro.hanca.cristian.munichcity.helpers.DataBaseHelpers;
 import ro.hanca.cristian.munichcity.helpers.FragmentHelpers;
+import ro.hanca.cristian.munichcity.helpers.LocationProvider;
 import ro.hanca.cristian.munichcity.helpers.MenuHandler;
 import ro.hanca.cristian.munichcity.models.DaoMaster;
 import ro.hanca.cristian.munichcity.models.DaoSession;
@@ -103,10 +107,11 @@ public class MainActivity extends AppCompatActivity
                         Constants.permission_fine_location);
             }
 
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.add(R.id.fragment, new NearFragment(), Constants.gotoNear);
-            ft.addToBackStack(Constants.gotoNear);
-            ft.commit();
+            if (AppContext.location == null) {
+                AppContext.location = new LocationProvider();
+            }
+
+            FragmentHelpers.goToSingleton(new NearFragment(), Constants.gotoNear);
 
             menuHandler.setSelected(MenuHandler.HandledMenuItem.NEAR, false);
         } else {
@@ -161,4 +166,17 @@ public class MainActivity extends AppCompatActivity
 
         return menuHandler.handle(item);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        AppContext.location.enable(true);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        AppContext.location.enable(false);
+    }
+
 }

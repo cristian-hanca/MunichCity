@@ -1,5 +1,8 @@
 package ro.hanca.cristian.munichcity;
 
+import android.location.Location;
+
+import ro.hanca.cristian.munichcity.helpers.LocationProvider;
 import ro.hanca.cristian.munichcity.helpers.MenuHandler;
 import ro.hanca.cristian.munichcity.models.DaoSession;
 
@@ -12,6 +15,11 @@ public class AppContext {
      * Reference to the single Activity of the app.
      */
     public static MainActivity activity = null;
+
+    /**
+     * Location providing service.
+     */
+    public static LocationProvider location = null;
 
     /**
      * Points of Interest Database.
