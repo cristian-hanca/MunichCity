@@ -8,6 +8,7 @@ import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -15,6 +16,9 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.text.DecimalFormat;
+import java.util.Map;
 
 import ro.hanca.cristian.munichcity.AppContext;
 import ro.hanca.cristian.munichcity.R;
@@ -26,16 +30,28 @@ import ro.hanca.cristian.munichcity.models.POI;
 public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     private GoogleMap map;
-
-    private POI poi = null;
+    private Map.Entry<Float, POI> poi = null;
+    private DecimalFormat df = new DecimalFormat("#.##");
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              final Bundle savedInstanceState) {
-        AppContext.activity.setTitle(R.string.title_near);
+        AppContext.activity.setTitle(R.string.title_map);
         poi = AppContext.selected_poi;
 
-        View view = inflater.inflate(R.layout.fragment_near, container, false);
+        View view = inflater.inflate(R.layout.fragment_map, container, false);
+
+        TextView name = (TextView) view.findViewById(R.id.name);
+        name.setText(poi.getValue().getName());
+
+        TextView type = (TextView) view.findViewById(R.id.type);
+        type.setText(poi.getValue().getSubType().getType().getName());
+
+        TextView subtype = (TextView) view.findViewById(R.id.subtype);
+        subtype.setText(poi.getValue().getSubType().getName());
+
+        TextView distance = (TextView) view.findViewById(R.id.distance);
+        distance.setText(df.format(poi.getKey()));
 
         SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager()
                 .findFragmentById(R.id.map);
@@ -54,10 +70,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             map.setMyLocationEnabled(true);
         }
 
-        // Add a marker in Sydney, Australia, and move the camera.
-        LatLng munich = new LatLng(48.1351, 11.5820);
-        map.addMarker(new MarkerOptions().position(munich).title("Marker in Munich"));
-        map.moveCamera(CameraUpdateFactory.newLatLng(munich));
+        LatLng pos = new LatLng(poi.getValue().getLat(), poi.getValue().getLon());
+        map.addMarker(new MarkerOptions().position(pos));
+        map.moveCamera(CameraUpdateFactory.zoomTo(15));
+        map.moveCamera(CameraUpdateFactory.newLatLng(pos));
     }
 
 }

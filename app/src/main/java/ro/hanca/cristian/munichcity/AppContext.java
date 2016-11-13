@@ -2,6 +2,8 @@ package ro.hanca.cristian.munichcity;
 
 import android.location.Location;
 
+import java.util.Map;
+
 import ro.hanca.cristian.munichcity.helpers.DataCache;
 import ro.hanca.cristian.munichcity.helpers.LocationProvider;
 import ro.hanca.cristian.munichcity.helpers.MenuHandler;
@@ -31,7 +33,7 @@ public class AppContext {
     /**
      * POI currently Viewed.
      */
-    public static POI selected_poi = null;
+    public static Map.Entry<Float, POI> selected_poi = null;
 
     /**
      * Remember the last selection made by the user.

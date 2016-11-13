@@ -11,6 +11,7 @@ public class Constants {
 
     public final static String gotoNear = "gotoNear";
     public final static String gotoSearch = "gotoSearch";
+    public final static String gotoMap = "gotoMap";
 
     /**
      * Static Class.

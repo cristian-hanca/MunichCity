@@ -11,6 +11,7 @@
     <string name="title_trip">Trip</string>
     <string name="title_weather">Weather</string>
     <string name="title_info">Other Information</string>
+    <string name="title_map">Map View</string>
 
     <string name="menu_title">I want to…</string>
     <string name="menu_near">Find something near me</string>
@@ -27,4 +28,6 @@
     <string name="kilometers">Kilometers</string>
     <string name="hint_poi">Type Name of Place</string>
     <string name="count">(999)</string>
+    <string name="type">Type</string>
+    <string name="subtype">SubType</string>
 </resources>

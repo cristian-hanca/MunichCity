@@ -52,7 +52,7 @@ public class NearFragment extends Fragment implements OnMapReadyCallback {
 
         // Add a marker in Sydney, Australia, and move the camera.
         LatLng munich = new LatLng(48.1351, 11.5820);
-        map.addMarker(new MarkerOptions().position(munich).title("Marker in Munich"));
+        map.moveCamera(CameraUpdateFactory.zoomTo(11));
         map.moveCamera(CameraUpdateFactory.newLatLng(munich));
     }
 

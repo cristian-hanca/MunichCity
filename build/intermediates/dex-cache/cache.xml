@@ -462,21 +462,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\[Projects]\MunichCity\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a1e15a68047e6b70a8657ec1f7404e1486b3e53f">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_636d7c3139fa7d283564cac89048013bde454128\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.0_65db5c419f0a048d2b2033bb1d04a9f573bbc4c9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\[Projects]\MunichCity\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c22db52113a8564829900357b4d48e9199f805f1">
-        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_636d7c3139fa7d283564cac89048013bde454128\classes.dex" />
     </item>
     <item
         is-multidex="true"

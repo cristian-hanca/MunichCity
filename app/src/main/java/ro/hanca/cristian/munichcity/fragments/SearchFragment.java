@@ -22,11 +22,13 @@ import com.annimon.stream.function.Predicate;
 import ro.hanca.cristian.managedrecyclerview.ManagedRecyclerView;
 import ro.hanca.cristian.managedrecyclerview.adapter.RecyclerViewClickListener;
 import ro.hanca.cristian.munichcity.AppContext;
+import ro.hanca.cristian.munichcity.Constants;
 import ro.hanca.cristian.munichcity.R;
 import ro.hanca.cristian.munichcity.adapters.POIAdapter;
 import ro.hanca.cristian.munichcity.adapters.SubTypeAdapter;
 import ro.hanca.cristian.munichcity.adapters.TypeAdapter;
 import ro.hanca.cristian.munichcity.filters.POIFilters;
+import ro.hanca.cristian.munichcity.helpers.FragmentHelpers;
 import ro.hanca.cristian.munichcity.models.POI;
 import ro.hanca.cristian.munichcity.models.SubType;
 import ro.hanca.cristian.munichcity.models.Type;
@@ -207,11 +209,12 @@ public class SearchFragment extends Fragment {
         content.poiAdapter.setItemClickListener(new RecyclerViewClickListener() {
             @Override
             public void itemClicked(View v, int position) {
-                //adapter.getItem(position);
+                AppContext.selected_poi = content.poiAdapter.getItem(position);
                 AppContext.activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-
+                        FragmentHelpers.goToSingleton(new MapFragment(),
+                                Constants.gotoMap);
                     }
                 });
             }
