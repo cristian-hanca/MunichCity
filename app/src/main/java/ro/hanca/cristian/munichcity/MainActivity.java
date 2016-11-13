@@ -61,32 +61,37 @@ public class MainActivity extends AppCompatActivity
         assert navigationView != null;
         navigationView.setNavigationItemSelectedListener(this);
 
-        menuHandler = new MenuHandler(navigationView.getMenu(), new MenuHandler.Actions() {
+        menuHandler = new MenuHandler(navigationView.getMenu(), false, new MenuHandler.Actions() {
+            private void common() {
+                AppContext.selected_item = menuHandler.getSelected();
+                FragmentHelpers.popAll();
+            }
+
             @Override
             public void onNear() {
-                FragmentHelpers.popAll();
+                common();
                 FragmentHelpers.goToSingleton(new NearFragment(), Constants.gotoNear);
             }
 
             @Override
             public void onSearch() {
-                FragmentHelpers.popAll();
+                common();
                 FragmentHelpers.goToSingleton(new SearchFragment(), Constants.gotoSearch);
             }
 
             @Override
             public void onTrip() {
-                FragmentHelpers.popAll();
+                common();
             }
 
             @Override
             public void onWeather() {
-                FragmentHelpers.popAll();
+                common();
             }
 
             @Override
             public void onInfo() {
-                FragmentHelpers.popAll();
+                common();
             }
         });
 
@@ -103,7 +108,9 @@ public class MainActivity extends AppCompatActivity
             ft.addToBackStack(Constants.gotoNear);
             ft.commit();
 
-            menuHandler.setSelected(MenuHandler.HandledMenuItem.NEAR);
+            menuHandler.setSelected(MenuHandler.HandledMenuItem.NEAR, false);
+        } else {
+            menuHandler.setSelected(AppContext.selected_item, false);
         }
 
         if (AppContext.db == null) {

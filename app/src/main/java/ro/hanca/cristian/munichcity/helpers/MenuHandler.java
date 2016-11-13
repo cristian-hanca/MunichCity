@@ -8,7 +8,7 @@ import ro.hanca.cristian.munichcity.R;
 public class MenuHandler {
 
     public enum HandledMenuItem {
-        NEAR, SEARCH, TRIP, WEATHER, INFO
+        NEAR, SEARCH, TRIP, WEATHER, INFO, NONE
     }
 
     private final Menu menu;
@@ -20,7 +20,8 @@ public class MenuHandler {
     private MenuItem weather;
     private MenuItem info;
 
-    private HandledMenuItem selected = HandledMenuItem.NEAR;
+    private final boolean activateSame;
+    private HandledMenuItem selected = HandledMenuItem.NONE;
 
     private static final int nearId = R.id.menu_near;
     private static final int searchId = R.id.menu_search;
@@ -28,8 +29,9 @@ public class MenuHandler {
     private static final int weatherId = R.id.menu_weather;
     private static final int infoId = R.id.menu_info;
 
-   public MenuHandler(Menu menu, Actions actions) {
+    public MenuHandler(Menu menu, boolean activateSame, Actions actions) {
         this.menu = menu;
+        this.activateSame = activateSame;
         this.actions = actions;
 
         near = menu.findItem(nearId);
@@ -47,12 +49,27 @@ public class MenuHandler {
         return selected;
     }
 
-    public void setSelected(HandledMenuItem selected) {
+    public void setSelected(HandledMenuItem selected, boolean callAction) {
+        if (!activateSame && this.selected == selected) {
+            return;
+        }
+
         this.selected = selected;
-        updateSelected();
+        if (callAction) {
+            switch (selected) {
+                case NEAR: actions.onNear(); break;
+                case SEARCH: actions.onSearch(); break;
+                case TRIP: actions.onTrip(); break;
+                case WEATHER: actions.onWeather(); break;
+                case INFO: actions.onInfo(); break;
+                case NONE: break;
+            }
+        }
+
+        updateUi();
     }
 
-    private void updateSelected() {
+    public void updateUi() {
         near.setChecked(false);
         search.setChecked(false);
         trip.setChecked(false);
@@ -64,6 +81,7 @@ public class MenuHandler {
             case TRIP: trip.setChecked(true); break;
             case WEATHER: weather.setChecked(true); break;
             case INFO: info.setChecked(true); break;
+            case NONE: break;
         }
     }
 
@@ -71,31 +89,15 @@ public class MenuHandler {
         int id = item.getItemId();
 
         switch (id) {
-            case nearId :
-                selected = HandledMenuItem.NEAR;
-                actions.onNear();
-                break;
-            case searchId :
-                selected = HandledMenuItem.SEARCH;
-                actions.onSearch();
-                break;
-            case tripId :
-                selected = HandledMenuItem.TRIP;
-                actions.onTrip();
-                break;
-            case weatherId :
-                selected = HandledMenuItem.WEATHER;
-                actions.onWeather();
-                break;
-            case infoId :
-                selected = HandledMenuItem.INFO;
-                actions.onInfo();
-                break;
-            default:
-                return false;
+            case nearId : setSelected(HandledMenuItem.NEAR, true); break;
+            case searchId : setSelected(HandledMenuItem.SEARCH, true); break;
+            case tripId : setSelected(HandledMenuItem.TRIP, true); break;
+            case weatherId : setSelected(HandledMenuItem.WEATHER, true); break;
+            case infoId : setSelected(HandledMenuItem.INFO, true); break;
+            default: return false;
         }
 
-        updateSelected();
+        updateUi();
         return true;
     }
 
