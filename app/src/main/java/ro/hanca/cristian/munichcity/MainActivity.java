@@ -2,6 +2,8 @@ package ro.hanca.cristian.munichcity;
 
 import android.*;
 import android.content.pm.PackageManager;
+import android.content.res.AssetManager;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -16,9 +18,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
 import ro.hanca.cristian.munichcity.fragments.NearFragment;
+import ro.hanca.cristian.munichcity.helpers.DataBaseHelpers;
 import ro.hanca.cristian.munichcity.helpers.FragmentHelpers;
 import ro.hanca.cristian.munichcity.helpers.MenuHandler;
+import ro.hanca.cristian.munichcity.models.DaoMaster;
+import ro.hanca.cristian.munichcity.models.DaoSession;
+import ro.hanca.cristian.munichcity.models.POI;
+import ro.hanca.cristian.munichcity.models.SubType;
+import ro.hanca.cristian.munichcity.models.Type;
+import ro.hanca.cristian.munichcity.models.TypeDao;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -88,6 +101,10 @@ public class MainActivity extends AppCompatActivity
             ft.commit();
 
             menuHandler.setSelected(MenuHandler.HandledMenuItem.NEAR);
+        }
+
+        if (AppContext.db == null) {
+            AppContext.db = DataBaseHelpers.openDb();
         }
     }
 

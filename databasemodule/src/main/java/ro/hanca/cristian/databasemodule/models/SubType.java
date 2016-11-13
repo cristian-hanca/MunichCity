@@ -9,13 +9,13 @@ import com.j256.ormlite.table.DatabaseTable;
 @DatabaseTable(tableName = "SubType")
 public class SubType {
 
-    @DatabaseField(id = true)
-    public int id;
+    @DatabaseField(id = true, columnName = "Id")
+    public long id;
 
     @DatabaseField(foreign = true, columnName = "TypeId", foreignColumnName = "Id")
     public Type type;
 
-    @DatabaseField()
+    @DatabaseField(columnName = "Name")
     public String name;
 
     public SubType() {}

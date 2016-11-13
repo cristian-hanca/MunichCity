@@ -9,22 +9,22 @@ import com.j256.ormlite.table.DatabaseTable;
 @DatabaseTable(tableName = "POI")
 public class POI {
 
-    @DatabaseField(id = true)
+    @DatabaseField(id = true, columnName = "Id")
     public long id;
 
     @DatabaseField(foreign = true, columnName = "SubTypeId", foreignColumnName = "Id")
     public SubType subType;
 
-    @DatabaseField()
+    @DatabaseField(columnName = "OSMId")
     public String OSMId;
 
-    @DatabaseField()
+    @DatabaseField(columnName = "Lat")
     public double lat;
 
-    @DatabaseField()
+    @DatabaseField(columnName = "Lon")
     public double lon;
 
-    @DatabaseField()
+    @DatabaseField(columnName = "Name")
     public String name;
 
     public POI() {}

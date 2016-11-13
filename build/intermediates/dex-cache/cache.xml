@@ -129,6 +129,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Cris Surface\.gradle\caches\modules-2\files-2.1\de.greenrobot\greendao\2.1.0\9414c1d4578673dac83a23119009624fd695726d\greendao-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9414c1d4578673dac83a23119009624fd695726d">
+        <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\greendao-2.1.0_c549dc6334acd63a43b370be898622073125c313\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\[Projects]\MunichCity\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\9.8.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -196,7 +205,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3c328501b5a36460efe38171f91bcafab582e7ff">
+        sha1="327d47d05d73feaa9417711b45d674d6c7f12579">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_636d7c3139fa7d283564cac89048013bde454128\classes.dex" />
     </item>
     <item
@@ -250,7 +259,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3cbf470d814c67b113220fa7030232818641b384">
+        sha1="49a3a1e48ced956693b9f9dd9fc45132fada7352">
         <dex dex="C:\[Projects]\MunichCity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_fb5e1abf475c03739c8105519ae4b1ee70810b96\classes.dex" />
     </item>
     <item

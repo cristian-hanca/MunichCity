@@ -1,1 +1,1 @@
-include ':app', ':databasemodule'
+include ':app', ':databasemodule', ':daogenerator'
